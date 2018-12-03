@@ -1,23 +1,16 @@
-defmodule Chat.Mixfile do
+defmodule Chat.MixProject do
   use Mix.Project
 
   def project do
     [
       app: :chat,
-      version: "1.4.0",
-      elixir: "~> 1.6.0",
+      version: "0.1.0",
+      elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps(),
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [
-        coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.post": :test,
-        "coveralls.html": :test
-      ]
+      deps: deps()
     ]
   end
 
@@ -49,15 +42,7 @@ defmodule Chat.Mixfile do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"},
-
-      # The rest of the dependendencies are for testing/reporting
-      # tracking test coverage
-      {:excoveralls, "~> 0.7.0", only: [:test, :dev]},
-      # documentation
-      {:inch_ex, "~> 0.5.6", only: :docs},
-      # github.com/dwyl/learn-pre-commit
-      {:pre_commit, "~> 0.2.4", only: :dev}
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 
@@ -71,9 +56,7 @@ defmodule Chat.Mixfile do
     [
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
-      test: ["ecto.create --quiet", "ecto.migrate", "test"],
-      cover: ["coveralls.json"],
-      "cover.html": ["coveralls.html"]
+      test: ["ecto.create --quiet", "ecto.migrate", "test"]
     ]
   end
 end

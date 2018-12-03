@@ -4,4 +4,4 @@ module.exports = {
        joinTo: 'app.js'
        }
        }
-       }; 
+       }; 

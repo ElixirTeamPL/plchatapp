@@ -11,8 +11,8 @@ config :logger, level: :warn
 
 # Configure your database
 config :chat, Chat.Repo,
-  username: "sean",
-  password: "sean",
+  username: "postgres",
+  password: "postgres",
   database: "chat_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

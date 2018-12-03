@@ -16,6 +16,7 @@ import "phoenix_html"
 // Local files can be imported directly using relative paths, for example:
 import socket from "./socket"
 
+
 var channel = socket.channel('room:lobby', {}); // connect to chat "room"
 
 channel.on('shout', function (payload) { // listen to the 'shout' event

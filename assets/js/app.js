@@ -51,6 +51,12 @@ msg.addEventListener('keypress', function (event) {
   }
 });
 
+export var App = {
+  run: function(){
+    console.log("Hello from app!")
+  }
+}
+
   // .receive('ok', resp => {
   //   console.log('Joined successfully', resp);
   // })

@@ -39,7 +39,7 @@ exports.config = {
     // Dependencies and current project directories to watch
     watched: ["assets/static", "assets/css", "assets/js", "assets/vendor"],
     // Where to compile files to
-    public: "/priv/static"
+    public: "priv/static"
   },
 
   // Configure your plugins

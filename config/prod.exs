@@ -16,8 +16,9 @@ use Mix.Config
 config :chat, ChatWeb.Endpoint,
   http: [port: {:system, "PORT"}],
   load_from_system_env: true,
-  url: [scheme: "https", host: "cs408pl.herokuapp.com", port: System.get_env("PORT")], # Heroku Supplies the TCP Port
-  # port: 443],
+  url: [scheme: "https", host: "cs408pl.herokuapp.com", port: 443],
+  #port: System.get_env("PORT")], # Heroku Supplies the TCP Port
+  
   
   
   force_ssl: [rewrite_on: [:x_forwarded_proto]],

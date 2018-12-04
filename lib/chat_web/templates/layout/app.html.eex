@@ -9,6 +9,7 @@
 
     <title>Phoenix Chat Example!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <script>require("js/app").App.run()</script>
   </head>
 
   <body>

@@ -2,7 +2,7 @@ cd assets
 npm install
 cd ..
 npm install -g brunch
-mkdir priv/static
+
 brunch build --production
 mix phx.digest
 npm run deploy

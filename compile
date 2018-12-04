@@ -1,7 +1,5 @@
 cd assets
 npm install
 cd ..
-
-mix phx.digest
 npm run deploy
 cd $phoenix_dir

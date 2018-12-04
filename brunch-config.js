@@ -46,7 +46,7 @@ exports.config = {
   plugins: {
     babel: {
       // Do not use ES6 compiler in vendor code
-      ignore: [assets/vendor/]
+      ignore: [/vendor/]
     }
   },
 

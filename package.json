@@ -2,7 +2,7 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "deploy": ["cd assets", "brunch build --production", "cd .."],
+    "deploy": "echo hi",
     "watch": "brunch watch --stdin"
   },
   "dependencies": {

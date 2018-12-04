@@ -1,4 +1,4 @@
 npm install babel-preset-env --save
 npm run deploy
 cd $phoenix_dir
-mix "phx.digest"
+mix phx.digest

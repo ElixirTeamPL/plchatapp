@@ -4,7 +4,7 @@ defmodule Chat.Mixfile do
   def project do
     [
       app: :chat,
-      version: "1.4.0",
+      version: "1.3.4",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),

@@ -1,3 +1,6 @@
+cd assets/
+npm run deploy
+cd ..
 mkdir priv/static
 brunch build --production
 mix phx.digest
